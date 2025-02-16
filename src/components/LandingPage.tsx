@@ -34,19 +34,19 @@ const LandingPage = () => {
     useTicketStore();
 
   return (
-    <section className="main_card ">
-      <Card className="main_card2">
+    <section className="flex flex-col items-center justify-center">
+      <Card className=" min-w-[700] bg-[#041E23] mx-auto border-[#0E464F]">
         <CardHeader>
-          <CardTitle className="cardtitle1">
-            <h1 className="h1">Ticket Selection</h1>
-            <span className="span1">Step 1/3</span>
+          <CardTitle className="flex items-center justify-between">
+            <h1 className="font-jejumyeongjo text-xl md:text-2xl font-normal text-[#FFFFFF]">Ticket Selection</h1>
+            <span className="text-xs md:text-sm text-gray-300">Step 1/3</span>
           </CardTitle>
-          <div className="progress">
-            <div className="progress_bar" style={{ width: "33%" }} />
+          <div className="relative w-full bg-[#0E464F] h-1 mt-2 rounded">
+            <div className="absolute left-0 top-0 h-full bg-[#24A0B5] rounded transition-all duration-300" style={{ width: "33%" }} />
           </div>
         </CardHeader>
 
-        <div className="body_card">
+        <div className="border-0 md:border border-[#0E464F] md:bg-[#08252B] sm:bg-transparent  md:m-6 rounded-xl">
           <CardContent>
             <div className="mb-6 border border-[#07373F] my-4 rounded-lg mx-2 text-center p-4 bg-[radial-gradient(circle,#07373f,#0a0c1133)]">
               <h2 className="font-road_rage text-4xl md:text-5xl text-[#FAFAFA]">

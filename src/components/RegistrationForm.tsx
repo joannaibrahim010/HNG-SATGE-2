@@ -139,7 +139,7 @@ export const RegistrationForm = () => {
 
         <CardContent>
           <div className="space-y-6 p-5 body_card">
-           a
+           
             <div className="p-4 border border-[#0E464F]  bg-[#052228]   rounded-xl ">
               <label className="text-white text-sm ">Upload Profile Photo</label>
               <div className='bg-[#02191D] h-[135px] mt-12 '></div>
