@@ -36,7 +36,6 @@ export const RegistrationForm = () => {
       setIsUploading(true);
       setUploadError(null);
 
-      // Validate file
       const MAX_SIZE = 2 * 1024 * 1024; // 2MB
       const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
       
@@ -48,7 +47,6 @@ export const RegistrationForm = () => {
         throw new Error('File size must be less than 2MB');
       }
 
-      // Upload to Cloudinary
       const formData = new FormData();
       formData.append('file', file);
       formData.append('upload_preset', process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET!);
@@ -114,7 +112,7 @@ export const RegistrationForm = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="main_card"
+      className="flex flex-col items-center justify-center"
     >
 
 <motion.div
@@ -123,7 +121,7 @@ export const RegistrationForm = () => {
         animate="visible"
         className=""
       >
-  <Card className="reg_card2">
+  <Card className="bg-[#041E23] border-[#0E464F] md:w-[700px] mx-auto">
             <CardHeader>
           <CardTitle className="cardtitle1">
             <h1 className="h1">Attendee Details</h1>
